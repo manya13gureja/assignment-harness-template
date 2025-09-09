@@ -1,0 +1,14 @@
+{
+  "name": "assignment-harness",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest --runInBand --json --outputFile=artifacts/jest-results.json",
+    "lint": "eslint src -f json -o artifacts/eslint.json || true",
+    "analyze": "rm -rf artifacts && mkdir -p artifacts && npm run test && npm run lint && node scripts/format-results.js"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0"
+  }
+}
