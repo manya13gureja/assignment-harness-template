@@ -1,5 +1,5 @@
-{
-  "name": "assignment-harness",
+ {
+  "name": "assignment-harness-fizzbuzz",
   "version": "1.0.0",
   "private": true,
   "scripts": {
