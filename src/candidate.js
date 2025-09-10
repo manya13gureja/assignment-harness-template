@@ -1,6 +1,6 @@
-function sum(a, b) {
-  // candidate implements
-  return a + b;
+function fizzBuzz(n) {
+  // TODO: Implement logic
+  return n;
 }
 
-module.exports = { sum };
+module.exports = { fizzBuzz };
