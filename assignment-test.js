@@ -1,9 +1,17 @@
-const { sum } = require('../src/candidate');
+const { fizzBuzz } = require('../src/candidate');
 
-test('sums two numbers', () => {
-  expect(sum(1,2)).toBe(3);
+test('divisible by 3 returns Fizz', () => {
+  expect(fizzBuzz(9)).toBe("Fizz");
 });
 
-test('handles negative numbers', () => {
-  expect(sum(-1,5)).toBe(4);
+test('divisible by 5 returns Buzz', () => {
+  expect(fizzBuzz(10)).toBe("Buzz");
+});
+
+test('divisible by 15 returns FizzBuzz', () => {
+  expect(fizzBuzz(30)).toBe("FizzBuzz");
+});
+
+test('non-divisible returns number', () => {
+  expect(fizzBuzz(7)).toBe(7);
 });
